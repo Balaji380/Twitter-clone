@@ -4,23 +4,27 @@
   "description": "Twitter clone",
   "main": "backend/server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js"
+    "dev": " nodemon backend/server.js",
+    "start": " node backend/server.js",
+    "build": "npm install && npm install --include=dev  --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "Balaji",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.12",
     "bcryptjs": "^3.0.2",
     "cloudinary": "^2.7.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
-    "express": "^5.1.0",
+    "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.17.0"
+    "mongoose": "^8.17.0",
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
+    "cross-env": "^10.0.0",
     "nodemon": "^3.1.10"
   },
   "type": "module",

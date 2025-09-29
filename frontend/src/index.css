@@ -1,0 +1,21 @@
+/* index.css */
+
+/* Import Tailwind */
+@import "tailwindcss";
+
+/* Tell Tailwind where to scan (optional but recommended in Vite + React) */
+@source "./index.html";
+@source "./src/**/*.{js,ts,jsx,tsx}";
+
+/* Enable daisyUI plugin */
+@plugin "daisyui" {
+  /* enable themes you want */
+  themes: light --default, black --prefersdark;
+}
+
+/* Customize built-in black theme */
+@plugin "daisyui/theme" {
+  name: "black";
+  --color-primary: rgb(29, 155, 240);
+  --color-secondary: rgb(24, 24, 24);
+}
